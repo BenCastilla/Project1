@@ -1,0 +1,23 @@
+
+
+import java.util.Iterator;
+
+public interface CustomSet <T>{
+
+    // return true if we insert, false otherwise (we can't have duplicates)
+    boolean add(T element);
+
+    // return true if we remove it, false otherwise
+    boolean remove(T element);
+
+    // returns true if the set contains the element
+    boolean contains(T element);
+
+    // returns an iterator over the all the elements in the set
+    Iterator iterator();
+
+    // how many elements are in the set:
+    int size();
+
+
+}
