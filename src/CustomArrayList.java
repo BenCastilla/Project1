@@ -24,7 +24,7 @@ public class CustomArrayList <T> implements CustomList<T> {
             resize();
         }
         // assign the element to the current spot as well as increase our size to adjust for the next spot
-        // TODO test out ++ position (before or after)
+
         elements[size++] = element;
         // [1, _, _, _]
     }   //  |  |
