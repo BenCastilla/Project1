@@ -1,16 +1,8 @@
 import java.util.Collection;
-import java.util.LinkedList;
 
-public interface Employee extends User {
+public interface Employee extends User{
 
-	Collection<Ticket> allTickets();
+	void submitTicket(Ticket t);
 	
-	default Collection<Ticket> pending() {
-		Collection<Ticket> pending = new LinkedList<Ticket>();
-		for(Ticket t : allTickets()) {
-			if(!t.isApproved())
-				pending.add(t);
-		}
-		return pending;
-	}
+	int employeeId();
 }
