@@ -1,6 +1,7 @@
 package servlets;
 
 import Interfaces.Employee;
+import Interfaces.Ticket;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import entities.EmployeeImpl;
 import entities.Manager;
@@ -13,13 +14,13 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class TicketServlet  extends HttpServlet {
-    public static Employee loggedin;
+    public static Employee loggedin = new EmployeeImpl();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         res.setStatus(202);
         ObjectMapper om = new ObjectMapper();
-
+        res.getWriter().print(om.writeValueAsString(Manager.allTickets()));
     }
 
     @Override
@@ -27,6 +28,7 @@ public class TicketServlet  extends HttpServlet {
         ObjectMapper om = new ObjectMapper();
         TicketImpl ti = om.readValue(req.getInputStream(), TicketImpl.class);
         loggedin.submitTicket(ti);
+        res.setStatus(200);
     }
 
     @Override
@@ -34,6 +36,7 @@ public class TicketServlet  extends HttpServlet {
         ObjectMapper om = new ObjectMapper();
         putTicket putReq = om.readValue(req.getInputStream(), putTicket.class);
         Manager.handleTicket(Manager.getTicket(putReq.id), putReq.approved);
+        res.setStatus(200);
     }
 
     class putTicket {
@@ -41,10 +44,11 @@ public class TicketServlet  extends HttpServlet {
         boolean approved;
     }
 
-    protected void doDelete(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+    protected void doDelete(HttpServletRequest req, HttpServletResponse res) throws IOException {
         ObjectMapper om = new ObjectMapper();
         int id = om.readValue(req.getInputStream(), Integer.class);
-
+        Manager.delteTicket(id);
+        res.setStatus(200);
     }
 
 }

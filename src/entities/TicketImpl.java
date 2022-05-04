@@ -6,9 +6,10 @@ import java.util.Date;
 
 public class TicketImpl implements Ticket {
     boolean approved;
-    Date date;
-    String name, description;
-    int amount, employeeID;
+    public Date date = new Date();
+    public String name, description;
+    public int amount;
+    int employeeID;
     @Override
     public boolean isApproved() {
         return approved;

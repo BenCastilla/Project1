@@ -2,12 +2,15 @@ package entities;
 
 import Interfaces.Ticket;
 
+import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Manager {
-    public static List<Ticket> tickets;
+    public static List<Ticket> tickets = new LinkedList<Ticket>();
 
     public static  List<Ticket> allTickets(){
+        Collections.sort(tickets);
         return tickets;
     }
 
@@ -16,7 +19,7 @@ public class Manager {
     }
 
     public static Ticket getTicket(int id){
-        return new TicketImpl();
+        return tickets.get(id);
     }
 
     public static void delteTicket(int id){

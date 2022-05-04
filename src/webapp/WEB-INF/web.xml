@@ -20,4 +20,13 @@
         <url-pattern>/employee</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>ticketServlet</servlet-name>
+        <servlet-class>servlets.TicketServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ticketServlet</servlet-name>
+        <url-pattern>/ticket</url-pattern>
+    </servlet-mapping>
+
 </web-app>
