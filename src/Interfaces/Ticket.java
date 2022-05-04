@@ -28,4 +28,6 @@ public interface Ticket extends Comparable<Ticket>{
 	 * true if you are accepting the ticket, false if denying the ticket
 	 */
 	void approve(boolean accept);
+
+	void setEmployeeID(int employeeId);
 }

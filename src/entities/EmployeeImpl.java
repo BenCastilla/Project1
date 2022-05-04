@@ -1,10 +1,8 @@
 package entities;
 
 import Interfaces.Employee;
-import Interfaces.Manager;
 import Interfaces.Ticket;
 
-import java.util.Collection;
 import java.util.List;
 
 public class EmployeeImpl implements Employee {

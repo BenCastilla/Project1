@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfd07b96-d9f8-4059-a0ad-a4cdca7a0a1a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Interfaces/Employees.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/TicketImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/servlets/TicketServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interfaces/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Manager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interfaces/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/Ticket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entities/EmployeeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/EmployeeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlets/EmployeeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/EmployeeServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +23,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
