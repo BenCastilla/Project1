@@ -1,11 +1,23 @@
+package Interfaces;
+
 import java.util.Collection;
 import java.util.LinkedList;
 
-public interface User {
-	boolean login(String username, String password);
-	
-	boolean register(String username, String password);
-	
+public interface Employee {
+	boolean login(String password);
+
+	/** Registers this user
+	 *
+	 * @return The generated UserId
+	 */
+	int register();
+
+	int employeeId();
+
+	/**
+	 * Implement so that Employees see only their tickets
+	 * @return a list of all tickets
+	 */
 	Collection<Ticket> allTickets();
 	
 	default Collection<Ticket> pending() {
@@ -25,4 +37,6 @@ public interface User {
 		}
 		return approved;
 	}
+
+	void submitTicket(Ticket t);
 }

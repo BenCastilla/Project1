@@ -1,3 +1,5 @@
+package Interfaces;
+
 import java.util.Date;
 
 public interface Ticket extends Comparable<Ticket>{
