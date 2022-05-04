@@ -1,6 +1,7 @@
 package entities;
 
 import Interfaces.Employee;
+import Interfaces.Manager;
 import Interfaces.Ticket;
 
 import java.util.Collection;
@@ -40,12 +41,7 @@ public class EmployeeImpl implements Employee {
     }
 
     @Override
-    public Collection<Ticket> allTickets() {
-        return null;
-    }
-
-    @Override
     public void submitTicket(Ticket t) {
-
+        Manager.allTickets().add(t);
     }
 }

@@ -21,4 +21,11 @@ public interface Ticket extends Comparable<Ticket>{
 		// TODO Auto-generated method stub
 		return this.dateMade().compareTo(arg0.dateMade());
 	}
+
+	/**Accept or Deny Ticket Request
+	 *
+	 * @param accept
+	 * true if you are accepting the ticket, false if denying the ticket
+	 */
+	void approve(boolean accept);
 }

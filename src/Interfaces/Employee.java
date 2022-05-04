@@ -2,6 +2,7 @@ package Interfaces;
 
 import java.util.Collection;
 import java.util.LinkedList;
+import java.util.List;
 
 public interface Employee {
 	boolean login(String password);
@@ -18,7 +19,14 @@ public interface Employee {
 	 * Implement so that Employees see only their tickets
 	 * @return a list of all tickets
 	 */
-	Collection<Ticket> allTickets();
+	default Collection<Ticket> allTickets() {
+		List<Ticket> theseTickets = new LinkedList<Ticket>();
+		for(Ticket t : Manager.allTickets()){
+			if(t.employeeID() == this.employeeId())
+				theseTickets.add(t);
+		}
+		return theseTickets;
+	}
 	
 	default Collection<Ticket> pending() {
 		Collection<Ticket> pending = new LinkedList<Ticket>();
