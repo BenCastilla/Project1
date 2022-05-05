@@ -1,0 +1,1 @@
+create table employees (id serial primary key, username varchar(50), password varchar(50), isAdmin boolean);
