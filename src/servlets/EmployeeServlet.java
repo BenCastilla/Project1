@@ -2,6 +2,7 @@ package servlets;
 
 import Interfaces.Employees;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import daos.EmployeeDao;
 import entities.EmployeeImpl;
 
 import javax.servlet.ServletException;
@@ -25,6 +26,7 @@ public class EmployeeServlet extends HttpServlet{
     protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         ObjectMapper om = new ObjectMapper();
         EmployeeImpl empl = om.readValue(req.getInputStream(), EmployeeImpl.class);
+
         int id = empl.register();
         res.getWriter().print("Generated id = "+id);
     }
