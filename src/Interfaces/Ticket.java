@@ -1,8 +1,10 @@
 package Interfaces;
 
+import dataStructures.CDSCompatible;
+
 import java.util.Date;
 
-public interface Ticket extends Comparable<Ticket>{
+public interface Ticket extends CDSCompatible<Ticket> {
 
 	boolean isApproved();
 	

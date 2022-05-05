@@ -42,4 +42,14 @@ public class EmployeeImpl implements Employee {
     public void submitTicket(Ticket t) {
         Manager.allTickets().add(t);
     }
+
+    @Override
+    public int getId() {
+        return employeeId();
+    }
+
+    @Override
+    public int compareTo(Employee o) {
+        return this.employeeId()-o.employeeId();
+    }
 }
