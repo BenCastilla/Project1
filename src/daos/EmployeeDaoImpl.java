@@ -56,7 +56,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
             ResultSet resultSet = statement.getGeneratedKeys();
             resultSet.next();
             int id = resultSet.getInt("id");
-            System.out.println("genereated id is: " + id);
+            System.out.println("updated id is: " + id);
 
 
         } catch (SQLException e) {

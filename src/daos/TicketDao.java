@@ -8,7 +8,7 @@ public interface TicketDao {
     public void insert(DbTicket dbTicket);
     public void update(DbTicket dbTicket);
     public void delete(DbTicket dbTicket);
-    public DbTicket get(int id);
+    public DbTicket get(int ticketId);
     List<DbTicket> getAll();
 
 }

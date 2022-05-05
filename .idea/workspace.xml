@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfd07b96-d9f8-4059-a0ad-a4cdca7a0a1a" name="Changes" comment="">
+    <list default="true" id="bfd07b96-d9f8-4059-a0ad-a4cdca7a0a1a" name="Changes" comment="added TicketDao and created DbTicket">
+      <change afterPath="$PROJECT_DIR$/src/daos/TicketDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/daos/EmployeeDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/daos/EmployeeDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/DbEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/DbEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/EmployeeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/EmployeeImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/TicketImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/TicketImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlets/EmployeeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/EmployeeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/daos/TicketDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/daos/TicketDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,6 +121,14 @@
       <option name="presentableId" value="Default" />
       <updated>1651179781558</updated>
     </task>
+    <task id="LOCAL-00001" summary="added TicketDao and created DbTicket">
+      <created>1651782379872</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1651782379872</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -135,5 +141,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added TicketDao and created DbTicket" />
+    <option name="LAST_COMMIT_MESSAGE" value="added TicketDao and created DbTicket" />
   </component>
 </project>
