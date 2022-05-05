@@ -24,8 +24,8 @@ public class EmployeeDaoImpl implements EmployeeDao {
 
         try {
             PreparedStatement statement = connection.prepareStatement(sql, PreparedStatement.RETURN_GENERATED_KEYS);
-            statement.setString(1, dbEmployee.getUsername());
-            statement.setString(2, dbEmployee.getPassword());
+            statement.setString(1,dbEmployee.getUsername());
+            statement.setString(2,dbEmployee.getPassword());
             statement.setBoolean(3, dbEmployee.isAdmin());
             // now that our statement is prepared, we can execute it:
             // count is how many rows are affected (optimally we would have 1, we are inserting a single employee)

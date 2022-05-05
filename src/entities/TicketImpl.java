@@ -5,11 +5,16 @@ import Interfaces.Ticket;
 import java.util.Date;
 
 public class TicketImpl implements Ticket {
+    public int ticketId;
     boolean approved;
     public Date date = new Date();
     public String name, description;
     public int amount;
     int employeeID;
+
+
+
+
     @Override
     public boolean isApproved() {
         return approved;

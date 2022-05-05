@@ -6,7 +6,7 @@ public class DbEmployee {
     private String password;
     private boolean isAdmin;
 
-    public DbEmployee() {};
+    public DbEmployee() {}
 
     public DbEmployee(int id, String username, String password, boolean isAdmin) {
         this.id = id;
@@ -16,7 +16,6 @@ public class DbEmployee {
     }
 
     public DbEmployee(String username, String password, boolean isAdmin) {
-        this.id = id;
         this.username = username;
         this.password = password;
         this.isAdmin = isAdmin;

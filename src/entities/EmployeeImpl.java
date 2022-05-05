@@ -6,20 +6,29 @@ import Interfaces.Ticket;
 import java.util.List;
 
 public class EmployeeImpl implements Employee {
-    private static List<Employee> users;
+    int id;
     public String username;
     public String password;
-    int id;
     boolean isAdmin;
+    private static List<Employee> users;
 
-    public EmployeeImpl(String username, String password) {
-        this.username = username;
-        this.password = password;
-    }
-
+    //Empty Constructor
     public EmployeeImpl() {
 
     }
+
+
+
+    public static List<Employee> getUsers() {
+        return users;
+    }
+
+    public static void setUsers(List<Employee> users) {
+        EmployeeImpl.users = users;
+    }
+
+
+    //Previous override methods
 
     @Override
     public boolean login(String password) {
