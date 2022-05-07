@@ -1,12 +1,14 @@
 package Interfaces;
 
+import dataStructures.CDSCompatible;
+import dataStructures.CustomDataStructure;
 import entities.Manager;
 
 import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
 
-public interface Employee {
+public interface Employee extends CDSCompatible<Employee> {
 	boolean login(String password);
 
 	/** Registers this user
@@ -21,8 +23,8 @@ public interface Employee {
 	 * Implement so that Employees see only their tickets
 	 * @return a list of all tickets
 	 */
-	default Collection<Ticket> allTickets() {
-		List<Ticket> theseTickets = new LinkedList<Ticket>();
+	default CustomDataStructure<Ticket> allTickets() {
+		CustomDataStructure<Ticket> theseTickets = new CustomDataStructure<Ticket>();
 		for(Ticket t : Manager.allTickets()){
 			if(t.employeeID() == this.employeeId())
 				theseTickets.add(t);
@@ -30,8 +32,8 @@ public interface Employee {
 		return theseTickets;
 	}
 	
-	default Collection<Ticket> pending() {
-		Collection<Ticket> pending = new LinkedList<Ticket>();
+	default CustomDataStructure<Ticket> pending() {
+		CustomDataStructure<Ticket> pending = new CustomDataStructure<Ticket>();
 		for(Ticket t : allTickets()) {
 			if(!t.isApproved())
 				pending.add(t);

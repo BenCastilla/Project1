@@ -54,4 +54,9 @@ public class TicketImpl implements Ticket {
     public void approve(boolean accept) {
         approved = accept;
     }
+
+    @Override
+    public int getId() {
+        return Manager.allTickets().indexOf(this);
+    }
 }
