@@ -1,15 +1,12 @@
 package daos;
 
 import Interfaces.Employee;
-import entities.DbEmployee;
-import entities.EmployeeImpl;
-
-import java.util.List;
+import dataStructures.CustomDataStructure;
 
 public interface EmployeeDao {
-    public void insert(DbEmployee dbEmployee);
-    public void update(DbEmployee dbEmployee);
-    public void delete(DbEmployee dbEmployee);
-    public DbEmployee get(int id);
-    List<DbEmployee> getAll();
+    public int insert(Employee dbEmployee);
+    public void update(Employee dbEmployeeS, int id);
+    public void delete(Employee dbEmployee);
+    public Employee get(int id);
+    CustomDataStructure<Employee> getAll();
 }

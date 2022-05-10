@@ -5,10 +5,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfd07b96-d9f8-4059-a0ad-a4cdca7a0a1a" name="Changes" comment="added TicketDao and created DbTicket">
-      <change afterPath="$PROJECT_DIR$/src/daos/TicketDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_78.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_194.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_12_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_12_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_10_1_0_M14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_10_1_0_M14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_servlet_api_10_1_0_M14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_4_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_32.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_3_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/Java/TestDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/EmployeesImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/Tickets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Project1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Project1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_12_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_12_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/Employees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/Employees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/daos/EmployeeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/daos/EmployeeDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/daos/EmployeeDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/daos/EmployeeDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/daos/TicketDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/daos/TicketDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/daos/TicketDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/daos/TicketDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataStructures/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dbFactory/ConnectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dbFactory/ConnectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/DbEmployee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/DbTicket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/EmployeeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/EmployeeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Manager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/TicketImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/TicketImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlets/EmployeeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/EmployeeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlets/TicketServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/TicketServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,9 +110,32 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
-  <component name="RunManager" selected="Smart Tomcat.Unnamed">
+  <component name="RunManager" selected="Smart Tomcat.webapp">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dataStructures.Test" />
+      <module name="Project1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Project1 in Project1" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="Project1" />
+      <option name="PACKAGE_NAME" value="test.java" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="directory" />
+      <option name="VM_PARAMETERS" />
+      <dir value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Unnamed" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY" nameIsGenerated="true">
       <option name="adminPort" value="8005" />
       <option name="contextPath" value="/Project1" />
@@ -108,6 +177,8 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="JUnit.Project1 in Project1" />
       <item itemvalue="Smart Tomcat.Unnamed" />
       <item itemvalue="Smart Tomcat.webapp" />
     </list>

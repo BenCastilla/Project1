@@ -1,14 +1,13 @@
 package daos;
 
-import entities.DbTicket;
-
-import java.util.List;
+import Interfaces.Ticket;
+import dataStructures.CustomDataStructure;
 
 public interface TicketDao {
-    public void insert(DbTicket dbTicket);
-    public void update(DbTicket dbTicket);
-    public void delete(DbTicket dbTicket);
-    public DbTicket get(int ticketId);
-    List<DbTicket> getAll();
+    public void insert(Ticket dbTicket);
+    public void update(Ticket dbTicket, int id);
+    public void delete(Ticket dbTicket);
+    public Ticket get(int ticketId);
+    CustomDataStructure<Ticket> getAll();
 
 }

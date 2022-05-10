@@ -1,18 +1,39 @@
 package entities;
 
 import Interfaces.Ticket;
+import servlets.TicketServlet;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class TicketImpl implements Ticket {
     public int ticketId;
     boolean approved;
-    public Date date = new Date();
-    public String name, description;
+    public Date date = new Date(System.currentTimeMillis());
+    public String description;
     public int amount;
     int employeeID;
 
+    public TicketImpl(int setTicketId, boolean isApproved, Date setDate, String setDescription, int setAmount, int setEmployeeID) {
+        ticketId = setTicketId;
+        approved = isApproved;
+        date = setDate;
+        description = setDescription;
+        amount = setAmount;
+        employeeID = setEmployeeID;
+    }
 
+    public TicketImpl(String setDescription, int setAmount) {
+        approved = false;
+        date = new Date(System.currentTimeMillis());
+        description = setDescription;
+        amount = setAmount;
+        employeeID = TicketServlet.loggedin.employeeId();
+
+    }
+
+    public TicketImpl() {
+
+    }
 
 
     @Override
@@ -23,11 +44,6 @@ public class TicketImpl implements Ticket {
     @Override
     public Date dateMade() {
         return date;
-    }
-
-    @Override
-    public String name() {
-        return name;
     }
 
     @Override
@@ -45,9 +61,23 @@ public class TicketImpl implements Ticket {
         return employeeID;
     }
 
-    @Override
     public void setEmployeeID(int employeeId) {
         employeeID = employeeId;
+    }
+
+    @Override
+    public Date getDate() {
+        return date;
+    }
+
+    @Override
+    public String getDescription() {
+        return description;
+    }
+
+    @Override
+    public int getAmount() {
+        return amount;
     }
 
     @Override
@@ -57,6 +87,6 @@ public class TicketImpl implements Ticket {
 
     @Override
     public int getId() {
-        return Manager.allTickets().indexOf(this);
+        return ticketId;
     }
 }

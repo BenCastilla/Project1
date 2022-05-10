@@ -2,7 +2,7 @@ package Interfaces;
 
 import dataStructures.CDSCompatible;
 import dataStructures.CustomDataStructure;
-import entities.Manager;
+import entities.Tickets;
 
 import java.util.Collection;
 import java.util.LinkedList;
@@ -15,7 +15,9 @@ public interface Employee extends CDSCompatible<Employee> {
 	 *
 	 * @return The generated UserId
 	 */
-	int register();
+	default int register(Employees employees) {
+		return employees.addEmployee(this);
+	}
 
 	int employeeId();
 
@@ -25,7 +27,7 @@ public interface Employee extends CDSCompatible<Employee> {
 	 */
 	default CustomDataStructure<Ticket> allTickets() {
 		CustomDataStructure<Ticket> theseTickets = new CustomDataStructure<Ticket>();
-		for(Ticket t : Manager.allTickets()){
+		for(Ticket t : Tickets.allTickets()){
 			if(t.employeeID() == this.employeeId())
 				theseTickets.add(t);
 		}
@@ -51,4 +53,10 @@ public interface Employee extends CDSCompatible<Employee> {
 	}
 
 	void submitTicket(Ticket t);
+
+	String getUsername();
+
+	String getPassword();
+
+	boolean isAdmin();
 }

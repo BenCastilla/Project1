@@ -2,6 +2,8 @@ package entities;
 
 import Interfaces.Employee;
 import Interfaces.Ticket;
+import daos.EmployeeDao;
+import dataStructures.CDSCompatible;
 
 import java.util.List;
 
@@ -9,22 +11,18 @@ public class EmployeeImpl implements Employee {
     int id;
     public String username;
     public String password;
-    boolean isAdmin;
-    private static List<Employee> users;
+    public boolean isAdmin;
 
     //Empty Constructor
     public EmployeeImpl() {
 
     }
 
-
-
-    public static List<Employee> getUsers() {
-        return users;
-    }
-
-    public static void setUsers(List<Employee> users) {
-        EmployeeImpl.users = users;
+    public EmployeeImpl(int id, String username, String password, Boolean isAdmin) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+        this.isAdmin = isAdmin;
     }
 
 
@@ -36,20 +34,29 @@ public class EmployeeImpl implements Employee {
     }
 
     @Override
-    public int register() {
-        users.add(this);
-        this.id = users.indexOf(this);
-        return users.indexOf(this);
-    }
-
-    @Override
     public int employeeId() {
         return id;
     }
 
     @Override
     public void submitTicket(Ticket t) {
-        Manager.allTickets().add(t);
+        t.setEmployeeID(this.id);
+        Tickets.addTicket(t);
+    }
+
+    @Override
+    public String getUsername() {
+        return username;
+    }
+
+    @Override
+    public String getPassword() {
+        return password;
+    }
+
+    @Override
+    public boolean isAdmin() {
+        return isAdmin;
     }
 
     @Override

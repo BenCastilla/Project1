@@ -2,15 +2,13 @@ package Interfaces;
 
 import dataStructures.CDSCompatible;
 
-import java.util.Date;
+import java.sql.Date;
 
 public interface Ticket extends CDSCompatible<Ticket> {
 
 	boolean isApproved();
 	
 	Date dateMade();
-	
-	String name();
 	
 	String description();
 	
@@ -31,5 +29,11 @@ public interface Ticket extends CDSCompatible<Ticket> {
 	 */
 	void approve(boolean accept);
 
-	void setEmployeeID(int employeeId);
+	Date getDate();
+
+	String getDescription();
+
+	int getAmount();
+
+    void setEmployeeID(int id);
 }

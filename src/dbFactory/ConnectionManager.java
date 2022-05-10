@@ -12,23 +12,29 @@ public class ConnectionManager {
     public ConnectionManager() {
     }
     public static Connection getConnection() {
-        if(connection == null){
-            try{
-                Class.forName("org.postgresql.Driver");
-            }catch (ClassNotFoundException e) {
+        if(connection == null) {
+            boolean test = false;
+            System.out.println("Connection is null");
+            try {
+                String driver = test ? "org.h2.Driver" : "org.postgresql.Driver";
+                // Specify the database driver:
+                try {
+                    Class.forName(driver);
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                }
+
+                ResourceBundle bundle = ResourceBundle.getBundle("jdbc");
+                String url = bundle.getString("url");
+                String username = bundle.getString("username");
+                String password = bundle.getString("password");
+
+                connection = DriverManager.getConnection(url, username, password);
+                System.out.println("connection : "+connection);
+            } catch (SQLException e) {
+                System.out.println(e.getLocalizedMessage());
                 e.printStackTrace();
             }
-
-        }
-        try {
-            ResourceBundle bundle = ResourceBundle.getBundle("jdbc");
-            String url = bundle.getString("url");
-            String username = bundle.getString("username");
-            String password = bundle.getString("password");
-
-            connection = DriverManager.getConnection(url, username, password);
-        } catch (SQLException e) {
-            e.getLocalizedMessage();
         }
         return connection;
     }
